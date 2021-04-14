@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "space-hackaton",
+    "site": "spacehackaton-a272f",
     "public": "build",
     "ignore": [
       "firebase.json",

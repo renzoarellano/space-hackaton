@@ -6,3 +6,22 @@ body {
   font-family: "gothambook", sans-serif;
   font-size: 14px;
 }
+.bg-color-bbva {
+  background-color: #072146 !important;
+  color: white !important;
+}
+
+.box-banner {
+  position: absolute;
+  top: 120px;
+  background-color: white;
+  padding: 40px;
+}
+
+.btn-facebook {
+  background-color: #3b5998;
+}
+
+.btn-google{
+  display: inline-block; background-color: white; border-radius: 15px;padding: 0px 4px 2px 4px
+}
