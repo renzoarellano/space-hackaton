@@ -16,7 +16,7 @@ const ThridPage = () => {
 
   const sendingOption = async (idProduct) => {
     const data = {
-      id_interno: userID,
+      id_interno: parseInt(userID.trim()),
       id_producto: idProduct,
     };
     try {

@@ -49,9 +49,9 @@ const FirstPage = () => {
               </h4>{" "}
               <br />
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500stext ever since the
+                Cuenta con nosotros para consultar tus saldos, hacer tus pagos,
+                controlar tus gastos y mucho mas, dsde donde estes de manera
+                gratuita.
               </p>
               <button
                 type="button"
@@ -97,8 +97,7 @@ const FirstPage = () => {
                         ¿Necesitas dinero en efectivo?
                       </h5>
                       <p className="card-text">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
+                        Haz realidad ese sueño, Pide un Préstamo Personal
                       </p>
                       <p className="card-text">
                         <small className="text-muted">
