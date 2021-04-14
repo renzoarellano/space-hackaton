@@ -1,21 +1,39 @@
 import React from "react";
 import { auth, facebookProvider, googleProvider } from "../lib/authFirebase";
+import { userContext } from "../context/Provider";
+import { useHistory } from "react-router-dom";
+
 const FirstPage = () => {
-  const [user, setUser] = React.useState(null);
+  const { setUserData } = React.useContext(userContext);
+  const history = useHistory();
+  const nextStep = () => history.push("paso-2");
   const facebookLogin = () => {
-    auth()
-      .signInWithPopup(facebookProvider)
-      .then(({ user }) => {
-        setUser(user.providerData);
-      });
+    try {
+      auth()
+        .signInWithPopup(facebookProvider)
+        .then(({ user }) => {
+          console.log("Facebook LogIN", user.providerData[0]);
+          setUserData(user.providerData[0]);
+          nextStep();
+        });
+    } catch (error) {
+      console.error(error);
+    }
   };
   const googleLogin = () => {
-    auth()
-      .signInWithPopup(googleProvider)
-      .then(({ user }) => {
-        setUser(user);
-      });
+    try {
+      auth()
+        .signInWithPopup(googleProvider)
+        .then(({ user }) => {
+          console.log("Google LogIN", user.providerData[0]);
+          setUserData(user.providerData[0]);
+          nextStep();
+        });
+    } catch (error) {
+      console.error(error);
+    }
   };
+
   return (
     <React.Fragment>
       <div className="container-fluid">

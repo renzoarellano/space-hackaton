@@ -25,3 +25,239 @@ body {
 .btn-google{
   display: inline-block; background-color: white; border-radius: 15px;padding: 0px 4px 2px 4px
 }
+
+
+//Banner Home principal
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 15px;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 100%;
+  background: transparent;
+  border: 1px solid $secondary-color;
+  opacity: 1 !important;
+  outline: none;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 3px solid white;
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 8px;
+    height: 8px;
+  }
+
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 5px;
+  }
+}
+
+.bannerSlide {
+  padding: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+  display: flex;
+  align-items: flex-end;
+
+  @media (max-width: 767px) {
+    min-height: 240px;
+
+    background-repeat: no-repeat;
+  }
+
+  .blackBlur {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 70px;
+
+    @media (max-width: 767px) {
+      padding-bottom: 45px;
+    }
+
+    h2 {
+      font-family: "gothambold", sans-serif;
+      font-size: 50px;
+      color: white;
+      margin: 0;
+    }
+
+    p {
+      font-family: "gothambook", sans-serif;
+      font-size: 21px;
+      color: white;
+      margin-top: 15px;
+      max-width: 700px;
+    }
+
+    @media (max-width: 767px) {
+      h2 {
+        font-size: 24px;
+      }
+
+      p {
+        display: none;
+      }
+    }
+
+    .buttonsBanner {
+      padding: 0;
+      display: inline-block;
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+
+      .buttonTrailer {
+        font-size: 18px;
+        color: $primary-color;
+        font-family: "gothammedium", sans-serif;
+        background-color: transparent;
+        border: 1px solid $primary-color;
+        border-radius: 25px;
+        padding: 8px 35px;
+        margin-right: 20px;
+        transition: 0.4s all;
+      }
+
+      .buttonTrailer:hover {
+        color: $secondary-color;
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+      }
+
+      .buttonComprar {
+        font-size: 18px;
+        color: $secondary-color;
+        font-family: "gothammedium", sans-serif;
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+        border-radius: 25px;
+        padding: 8px 35px;
+        margin-right: 20px;
+        transition: 0.4s all;
+      }
+      .buttonComprar:hover {
+        background-color: $brand-green;
+        border: 1px solid $brand-green;
+      }
+    }
+
+    .buttonsBannerResponsive {
+      padding: 0;
+      display: inline-block;
+      margin-top: 15px;
+
+      @media (min-width: 767px) {
+        display: none;
+      }
+
+      .buttonTrailer {
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        padding: 0;
+        margin-right: 20px;
+
+        img {
+          width: 35px;
+        }
+      }
+
+      .buttonComprar {
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        padding: 0;
+
+        img {
+          width: 35px;
+        }
+      }
+    }
+  }
+}
+
+.noPad {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.bg-color-bbva{
+  background-color: #072146!important;
+  color: white!important;
+}
+.box-banner{
+  position: absolute;
+  top: 120px;
+  background-color: white;
+  padding: 40px;
+}
+.text-user-card{
+  font-size: 0.9rem!important;
+  line-height: 1.4;
+}
+.w-full{
+  width: 100%;
+}
+.box-dni{
+  background-color: #033877;
+  color: white;
+  border-radius: 4px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+}
+.btn-continue{
+  background-color: rgb(25, 115, 184);
+  font-weight: bold;
+  border-radius: 0px;
+  padding: 12px 40px;
+}
+.text-recomendado{
+  color: #237aba;
+  display: inline-block;
+}
+.optionsLeftRow{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.dateclassName{
+  width: 100%;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}

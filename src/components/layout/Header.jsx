@@ -37,18 +37,18 @@ const Header = () => {
             </nav>
             <div className="col-md-1 col-lg-3 alignEndIcons">
               <a
-                href="https://www.facebook.com/cineviajerosautocinema/"
+                href="https://www.facebook.com/bbvaenperu/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={FacebookIcon} alt="Facebook Cineviajeros" />
+                <img src={FacebookIcon} alt="Facebook BBVA" />
               </a>
               <a
-                href="https://www.instagram.com/cineviajeros/ "
+                href="https://www.instagram.com/bbva_peru/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={InstagramIcon} alt="Instagram Cineviajeros" />
+                <img src={InstagramIcon} alt="Instagram BBVA" />
               </a>
             </div>
           </div>
