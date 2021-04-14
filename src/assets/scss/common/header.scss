@@ -1,0 +1,229 @@
+
+  //Header
+  .headerEffect {
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #044c8c;
+    border-bottom: 2px solid $primary-color;
+  
+    @media (max-width: 767px) {
+      padding: 15px 0px;
+    }
+  }
+  
+  .activeHeaderEffect {
+    position: fixed;
+    z-index: 999;
+    padding: 15px 0px;
+    top: 0;
+    background-color: #044c8c;
+  }
+  
+  .active {
+    color: $primary-color;
+    font-family: "gothammedium", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.4s all;
+  }
+  .topHeader {
+    @media (min-width: 768px) {
+      display: none;
+    }
+    background-color: $primary-color;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    button {
+      color: white;
+      background-color: transparent;
+      padding: 2px 15px;
+      border: 1px solid $secondary-color;
+      border-radius: 25px;
+      font-size: 14px;
+      outline: none;
+      transition: 0.4s all;
+    }
+    button:hover {
+      background-color: $brand-green;
+      border: 1px solid $brand-green;
+    }
+    img {
+      margin-left: 15px;
+    }
+  }
+  header {
+    .logoIcon {
+      width: 100%;
+      max-width: 190px;
+    }
+  
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      a {
+        color: $secondary-color;
+        font-family: "gothammedium", sans-serif;
+        font-size: 16px;
+        margin-right: 20px;
+        text-decoration: none;
+        transition: 0.4s all;
+      }
+  
+      a:hover {
+        color: $primary-color;
+        text-decoration: none;
+      }
+  
+      a:focus {
+        outline: none;
+      }
+    }
+  
+    @media (max-width: 767px) {
+      nav {
+        display: none;
+      }
+  
+      .row .mobileLogo {
+        text-align: right;
+  
+        a {
+          img {
+            max-width: 130px;
+          }
+        }
+      }
+    }
+  
+    .row .mobileButtonMenu {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      position: relative;
+      z-index: 1001;
+  
+      button {
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        display: flex;
+        display: -webkit-flex;
+        justify-self: end;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        height: 30px;
+        width: 45px;
+        outline: none;
+        position: relative;
+  
+        padding-right: 10px;
+        cursor: pointer;
+        .bar {
+          width: 30px;
+          height: 3px;
+          margin-top: 5px;
+  
+          transition: 0.4s all;
+          position: relative;
+          background-color: $primary-color;
+        }
+  
+        .bar1Effect {
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          height: 5px;
+        }
+        .bar2Effect {
+          display: none;
+        }
+        .bar3Effect {
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          top: -10px;
+          height: 5px;
+        }
+      }
+    }
+  
+    @media (min-width: 768px) {
+      .row .mobileButtonMenu {
+        display: none;
+      }
+    }
+  
+    .row .alignEndIcons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  
+      @media (max-width: 767px) {
+        display: none;
+      }
+  
+      img {
+        margin-left: 20px;
+      }
+    }
+  }
+  
+  .sideBarMobile {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+  
+    margin-left: 0px;
+    transition: 0.5s all;
+    .containerNavHeaderMobile {
+      background-color: $footer-color;
+      width: 65%;
+      padding-top: 120px;
+      height: 100%;
+      nav {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 0px;
+        a:nth-child(4) {
+          color: $primary-color;
+          font-family: "gothambold", sans-serif;
+          font-size: 18px;
+          margin-right: 20px;
+          text-decoration: none;
+          transition: 0.4s all;
+          margin-top: 25px;
+          margin-top: 80px;
+        }
+        a {
+          color: $secondary-color;
+          font-family: "gothambold", sans-serif;
+          font-size: 18px;
+          margin-right: 20px;
+          text-decoration: none;
+          transition: 0.4s all;
+          margin-top: 25px;
+        }
+  
+        a:hover {
+          color: $primary-color;
+          text-decoration: none;
+        }
+  
+        a:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .sideBarMobileEffect {
+    margin-left: -3000px;
+  }
+  
